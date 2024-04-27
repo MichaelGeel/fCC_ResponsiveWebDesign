@@ -1,0 +1,50 @@
+<DOCTYPE html>
+    <html lang="en">
+      <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8">
+        <title>Survey Tempalte</title>
+      </head>
+      <body>
+        <header>
+          <h1 id="title">Survey Template</h1>
+          <p id="description" class="header">This form is a base template for a survey that'd be conducted for any means or purpose.</p>
+          <hr id="intro-split">
+          <p class="header">
+            This is a placeholder space where a description of the purpsoe of this survey would be added for context for the person filling in the survey.
+          </p>
+        </header>
+        <form id="survey-form">
+          <fieldset id="basic-info">
+              <label for="name" id="name-label">Enter your first name: <input type="text" id="name" required placeholder="John"></input></label>
+              <label for="surname" id="surname-label">Enter your last name: <input type="text" id="surname" required placeholder="Smith"></input></label>
+              <label for="email" id="email-label">Enter your email: <input type="email" id="email" required placeholder="your.email@gmail.com"></input></label>
+              <label for="number" id="number-label">Enter your age: <input id="number" type="number" required min=18 max=120 placeholder="Minimum: 18"></input></label>
+          </fieldset>
+          <fieldset id="survey-information">
+            <label for="source" id="select-label">What is your goal at freeCodeCamp? <select id="dropdown"></label>
+              <option>(select an option...)</option>
+              <option>Learning Front End Development</option>
+              <option>Learning Back End Development</option>
+              <option>Learning SQL</option>
+              <option>Learning DevOps</option>
+            </select>
+            <hr class="question-split">
+            <legend>Do you plan to study with freeCodeCamp in the long term or short term?</legend>
+              <label for="long-term"><input type="radio" id="long-term" name="study-plan" value="long" checked> Long Term</input></label>
+              <label for="short-term"><input type="radio" id="short-term" name="study-plan" value="short"> Short Term</input></label>   
+              <hr class="question-split">  
+              <p>Which of the following describes you best? </p>
+                <label for="start" class="checkbox-item"><input type="checkbox" name="career" id="start" value="start" checked class="goal"> I want to start a career in the development industry</input></label>  
+                <label for="continue" class="checkbox-item"><input type="checkbox" name="career" id="continue" value="continue" class="goal"> I want to further my career in the development industry</input></label>
+                <label for="change" class="checkbox-item"><input type="checkbox" name="career" id="change" value="change" class="goal"> I want to change roles in the development industry</input></label>
+                <label for="explore" class="checkbox-item"><input type="checkbox" name="career" id="explore" value="explore" class="goal"> I want to explore the other fields and gain some knowledge</input></label>
+              <hr class="question-split">
+              <label for="feedback" id="feedback-label">What was your first impression of freeCodeCamp?
+                <textarea id="feedback" name="feedback" placeholder="I think freeCodeCamp is awesome" rows=5, cols=55></textarea>
+          </fieldset>
+          <hr class="form-end">
+          <input type="submit" id="submit"></input>
+        </form>
+      </body>
+    </html>

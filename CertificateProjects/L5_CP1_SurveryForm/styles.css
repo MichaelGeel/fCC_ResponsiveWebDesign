@@ -1,0 +1,96 @@
+body {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    font-family: Tahoma;
+    font-size: 16px;
+    background-color: rgba(220, 150, 120, 0.5);
+  }
+  
+  label {
+    display: block;
+    padding: 0.5rem;
+  }
+  
+  fieldset {
+    border: 0px;
+    padding: 0.5rem;
+    margin: auto;
+  }
+  
+  label {
+    display: inline-block;
+    margin: 0.1rem 0;
+    width: 90%;
+  }
+  
+  form {
+    width: 60vw;
+    min-width: 300px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgba(230, 200, 120, 0.2);
+    padding-bottom: 2em;
+    text-align: left;
+  }
+  
+  .question-split, #intro-split {
+      height: 2px;
+      border: 0px;
+      margin: 15px auto;
+  }
+  
+  .question-split {
+    background-color: burlywood;
+    width: 70%;
+  }
+  
+  #intro-split {
+    height: 2px;
+    background-color: rgb(225, 170, 170);
+    width: 80vw;
+  }
+  
+  .header {
+    width: 80vw;
+    margin: 1rem auto;
+    text-align: center;
+  }
+  
+  textarea{
+    margin: 0.5rem 0;
+  }
+  
+  #dropdown, input[type="text"], select, input[type="email"], input[type="number"] {
+    min-height: 2em;
+    width: 100%;
+  }
+  
+  .goal {
+    display: inline-block;
+    margin-left: -21px;
+  }
+  
+  .checkbox-item {
+    margin-left: 21px;
+  }
+  
+  #select-label {
+    margin-top: -15px;
+  }
+  
+  #submit {
+    display: block;
+    width: 60%;
+    height: 2em;
+    margin: 1em auto;
+    font-size: 1.1rem;
+  }
+  
+  .form-end {
+    height: 2px;
+    border: 0px;
+    margin: 15px auto;
+    background-color: burlywood;
+    width: 100%;
+  }
